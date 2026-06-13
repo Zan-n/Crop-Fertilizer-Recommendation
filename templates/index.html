@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop and Fertilizer Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+
+    <h1>Crop and Fertilizer Recommendation System</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+
+    <form method="post" action="/">
+        <label for="N">Nitrogen (N):</label>
+        <input type="text" name="N" required><br>
+
+        <label for="P">Phosphorus (P):</label>
+        <input type="text" name="P" required><br>
+
+        <label for="K">Potassium (K):</label>
+        <input type="text" name="K" required><br>
+
+        <label for="temperature">Temperature:</label>
+        <input type="text" name="temperature" required><br>
+
+        <label for="humidity">Humidity:</label>
+        <input type="text" name="humidity" required><br>
+
+        <label for="ph">pH:</label>
+        <input type="text" name="ph" required><br>
+
+        <label for="rainfall">Rainfall:</label>
+        <input type="text" name="rainfall" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+ <div class="result-container">
+        {% if crop_prediction %}
+            <h2>Crop Prediction: {{ crop_prediction }}</h2>
+        {% endif %}
+
+        {% if fertilizer_prediction %}
+            <h2>Fertilizer Prediction: {{ fertilizer_prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
