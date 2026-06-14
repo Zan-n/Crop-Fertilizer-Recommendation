@@ -1,5 +1,10 @@
 # Crop & Fertilizer Recommendation System
 
+![License MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Python 3.x](https://img.shields.io/badge/Python-3.x-blue.svg)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-1.x-orange.svg)
+![Flask](https://img.shields.io/badge/Flask-3.x-lightgrey.svg)
+
 A machine learning-based web application that recommends the most suitable **crop** and **fertilizer** based on soil nutrient levels and environmental conditions. Built with Flask and scikit-learn.
 
 ## Overview
@@ -115,6 +120,9 @@ The Jupyter notebook (`Recommendation_Fertilizer.ipynb`) covers the full ML pipe
 6. **Model Comparison** — Random Forest vs Neural Network on accuracy, training time, and memory usage
 7. **Deployment** — model export via Pickle, Flask web application
 
+
 ## License
 
-This project is open source and available for educational purposes.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2026 **Zannatul-Ferdous**
