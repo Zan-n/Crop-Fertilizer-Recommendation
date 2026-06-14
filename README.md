@@ -125,4 +125,4 @@ The Jupyter notebook (`Recommendation_Fertilizer.ipynb`) covers the full ML pipe
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
-Copyright (c) 2026 **Zannatul-Ferdous**
+Copyright © 2026 Zannatul-Ferdous
